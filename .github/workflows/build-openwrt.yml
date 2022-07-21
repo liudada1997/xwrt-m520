@@ -88,7 +88,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         make dirclean
-        rm -rf ./tmp && rm -rf .config
+        rm -rf ./tmp
         ./scripts/feeds clean
 
     - name: SSH connection to Actions
