@@ -87,9 +87,6 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        make dirclean
-        rm -rf ./tmp
-        ./scripts/feeds clean
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
